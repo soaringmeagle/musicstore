@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Wrox.ProMvc5.Views.SpecifyingViews</id>
+    <version>1.0.0</version>
+    <title>Wrox.ProMvc5.Views.SpecifyingViews</title>
+    <authors>Phil Haack, Jon Galloway</authors>
+    <owners>Phil Haack, Jon Galloway</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sample code from Chapter 3 of the Professional ASP.NET MVC 5 book by Wrox.</description>
+    <summary />
+    <language>en-US</language>
+  </metadata>
+</package>
