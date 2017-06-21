@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MvcMusicStore.Models.Album>
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+<form action="/Home/Search" method="get">
+    <input type="text" name="q" />
+    <input type="submit" value="搜索" />
+</form>
+@using(Html.BeginForm("Search","Home",FormMethod.Get))
+{
+    <input type="text" name="q" />
+    <input type="submit" value="搜索" />
+}
+<table class="table table-condensed table-striped ">
+    <tr>
+        <th>Artist</th>
+        <th>Title</th>
+        <th>Price</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Artist.Name</td>
+            <td>@item.Title</td>
+            <td>@item.Price</td>
+        </tr>
+    }
+</table>
